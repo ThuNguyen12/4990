@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personalized Quiz Generator</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Personalized Quiz Generator</h1>
+        <form id="quiz-form">
+            <label for="subject_class">Subject Class:</label>
+            <input type="text" id="subject_class" name="subject_class" required>
+            <button type="submit">Generate Quiz</button>
+        </form>
+        <div id="quiz-questions"></div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
